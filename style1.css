@@ -1,0 +1,14 @@
+
+
+
+ul{
+      margin:0;
+      padding:0;
+      	float:right;
+}
+ul li{
+
+	display:inline-block;
+	magin-right :10px;
+	list-style:none;
+	}
