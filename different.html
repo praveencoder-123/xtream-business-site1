@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acme Outdoors</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+    /* Announcement Bar */
+    .announcement {
+      background: #ff4d4d;
+      color: #fff;
+      text-align: center;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    /* Navbar */
+    header {
+      background: #e63946;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+    }
+    header h1 {
+      color: #fff;
+      font-size: 20px;
+      padding-right:10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight:bold; 
+      font-size:13px;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #222;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+      color: #fff;
+    }
+    .hero-content {
+      max-width: 500px;
+    }
+    .hero h2 { font-size: 40px; margin-bottom: 15px; }
+    .btn {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover { background: #c92c3a; }
+
+    /* Support Section */
+    .support {
+      padding: 60px 8%;
+      text-align: center;
+    }
+    .support h3 { font-size: 26px; margin-bottom: 10px; }
+    .support p { margin-bottom: 40px; }
+    .support-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .box {
+      background: #111;
+      color: #fff;
+      padding: 40px 20px;
+      border-radius: 8px;
+    }
+    .box h4 { font-size: 20px; margin-bottom: 15px; }
+
+    /* Banner Section */
+    .banner {
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: left;
+      padding: 80px 8%;
+    }
+    .banner h3 { font-size: 30px; margin-bottom: 15px; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    How we're responding to COVID-19
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <h1 class="acme">Acme</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="404.html">404</a></li>
+        <li><a href="privacy.html">privacy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Serving you since 1989.</h2>
+      <p>Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.</p>
+      <a href="#" class="btn">Shop Merch</a>
+    </div>
+  </section>
+
+  <!-- Support -->
+  <section class="support">
+    <h3>Support Acme Outdoor.</h3>
+    <p>COVID-19 has forced us to close our retail space, but we need support from shoppers like you to keep our team going.</p>
+    <div class="support-boxes">
+      <div class="box">
+        <h4>01 - Shop Products</h4>
+        <p>Our full product line is still available online...</p>
+      </div>
+      <div class="box">
+        <h4>02 - Donate</h4>
+        <p>Since we’ve had to close our physical store...</p>
+      </div>
+      <div class="box">
+        <h4>03 - Buy Gift Cards</h4>
+        <p>Now more than ever, gift cards can help sustain...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h3>How we're keeping you safe during COVID-19</h3>
+    <p>At our outdoor shop, we’ve taken precautionary measures...</p>
+    <a href="#" class="btn">Read Our Statement</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Shop Products – Open 24/7/365.</p>
+  </footer>
+
+</body>
+</html>

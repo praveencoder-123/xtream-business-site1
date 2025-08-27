@@ -81,7 +81,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #f8f8f8;
+  background-color: #F5F5F5;
   padding: 20px 0;
   font-size: 14px;
   color: #777;
@@ -118,3 +118,23 @@ body {
     padding: 6px 10px;
   }
 }
+/*changed later*/
+ body {
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar {
+  margin-bottom: 0; /* remove space after navbar */
+}
+
+section, .hero-section, .main-content {
+  margin-top: 0;
+  padding-top:0;
+  }
+.dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
+}
+/* navbar more */
+        
