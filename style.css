@@ -81,7 +81,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #F5F5F5;
+  background-color: #f8f8f8;
   padding: 20px 0;
   font-size: 14px;
   color: #777;
@@ -117,24 +117,97 @@ body {
     font-size: 12px;
     padding: 6px 10px;
   }
-}
-/*changed later*/
- body {
-  margin: 0;
-  padding: 0;
+
+/* oother responsiveness*/
+/* Full-width responsive container */
+.container {
+  width: 100%;
+  max-width: 1200px; /* ya 1400px for bigger screens */
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-nav.navbar {
-  margin-bottom: 0; /* remove space after navbar */
+/* Responsive text scaling */
+.hero h1 {
+  font-size: clamp(28px, 4vw, 56px);
+}
+.hero p {
+  font-size: clamp(16px, 2vw, 22px);
 }
 
-section, .hero-section, .main-content {
-  margin-top: 0;
-  padding-top:0;
+/* Responsive grid for features */
+.features .col-md-4 {
+  margin-bottom: 30px;
+}
+
+/* Extra breakpoints (Bootstrap 3 ka default limited hai) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
-.dropdown-menu {
-  max-height: 300px;
-  overflow-y: auto;
 }
-/* navbar more */
-        
+/* ✅ 1200px breakpoint (laptop/desktop screens) */
+@media (max-width: 1200px) {
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  .section {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  .hero h1 {
+    font-size: 26px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 10px;
+  }
+  .hero h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 320px) {
+  .hero h1 { font-size: 18px; }
+  .hero p { font-size: 14px; }
+}
+
+/*jo chrome ka desktop site karne pe half screen size me footer khatam ho jaa raha tha uske liye*/
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+
+
+
