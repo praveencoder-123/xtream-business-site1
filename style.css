@@ -120,12 +120,21 @@ body {
 
 /* oother responsiveness*/
 /* Full-width responsive container */
+/*this contaimer is added because chome me desktop site karne pe half screen me footer khatam ho jaa rha tha aur isliye isse bad me upar rha below .container se*/
+.container {
+  width: 100%;
+  max-width: 1400px; /* bade desktop ke liye */
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .container {
   width: 100%;
   max-width: 1200px; /* ya 1400px for bigger screens */
   margin: 0 auto;
   padding: 0 15px;
 }
+
+
 
 /* Responsive text scaling */
 .hero h1 {
@@ -145,7 +154,19 @@ body {
   .container {
     max-width: 1320px;
   }
+} /*still khosis karne ke bad chrome me desktop mode karne ke bad khatam ho jaa rha tha isliye 142 se 147  aur 177 se 186 line change kiya gya hai*/
+/* For large desktops */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1320px; /* bade laptop/desktop ke liye */
+  }
 }
+
+/* Body safe zone */
+body {
+  min-width: 320px;
+}
+
 /* ✅ 1200px breakpoint (laptop/desktop screens) */
 @media (max-width: 1200px) {
   .hero {
