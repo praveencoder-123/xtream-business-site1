@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KKL Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 5vw, 56px);
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: clamp(16px, 2vw, 22px);
+  margin-bottom: 20px;
+}
+
+.services .col-md-3 {
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.projects .card {
+  background: #222;
+  color: #fff;
+  border: none;
+  text-align: center;
+}
+
+blockquote {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">KKL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Stats</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center text-white d-flex align-items-center">
+    <div class="container">
+      <h1>Elevate Your Brand in the Digital World</h1>
+      <p>Transform your business with innovation, strategy, and design.</p>
+      <a href="#" class="btn btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services py-5">
+    <div class="container text-center">
+      <h2>Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-3">Website Development</div>
+        <div class="col-md-3">Digital Marketing</div>
+        <div class="col-md-3">SEO Optimization</div>
+        <div class="col-md-3">Social Media Management</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="video py-5 text-center">
+    <div class="container">
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <!-- Step Guide -->
+  <section class="steps py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center">How KKL Works: A Step-by-Step Guide</h2>
+      <div class="row text-center mt-4">
+        <div class="col-md-4">Consultation & Strategy</div>
+        <div class="col-md-4">Implementation</div>
+        <div class="col-md-4">Delivery & Growth</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="projects py-5">
+    <div class="container">
+      <h2 class="text-center">Featured Projects</h2>
+      <div class="row mt-4">
+        <div class="col-md-4"><div class="card p-3">Project 1</div></div>
+        <div class="col-md-4"><div class="card p-3">Project 2</div></div>
+        <div class="col-md-4"><div class="card p-3">Project 3</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats py-5 bg-dark text-white text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><h3>1200+</h3><p>Happy Clients</p></div>
+        <div class="col-md-4"><h3>850+</h3><p>Projects Completed</p></div>
+        <div class="col-md-4"><h3>1500+</h3><p>Campaigns Launched</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials py-5">
+    <div class="container">
+      <h2 class="text-center">Client Testimonials</h2>
+      <div class="row mt-4">
+        <div class="col-md-4"><blockquote>“Amazing Service!”</blockquote></div>
+        <div class="col-md-4"><blockquote>“Great Experience!”</blockquote></div>
+        <div class="col-md-4"><blockquote>“Highly Recommend!”</blockquote></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 KKL Agency. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
